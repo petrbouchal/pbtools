@@ -1,0 +1,10 @@
+{
+    "dialog-state" : {
+        "caseSensitive" : false,
+        "filePatterns" : [
+        ],
+        "path" : "~/github/local/pbtools",
+        "query" : "pbtools_lib",
+        "regex" : false
+    }
+}

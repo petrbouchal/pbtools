@@ -1,0 +1,12 @@
+LoadBasicLibraries <- function () {
+  library(stringr)
+  library(plyr)
+  library(dplyr)
+  library(reshape)
+  library(reshape2)
+  require(ggplot2)
+  require(scales)
+  require(grid)
+  require(ggthemes)
+  require(extrafont)
+}

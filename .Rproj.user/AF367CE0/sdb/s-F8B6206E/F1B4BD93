@@ -1,0 +1,16 @@
+{
+    "contents" : "Package: pbtools\nType: Package\nTitle: Contains various reusable bits of code\nVersion: 0.1\nDate: 2014-05-10\nAuthor: Petr Bouchal\nMaintainer: Petr Bouchal <pbouchal@gmail.com>\nDescription: Contains various reusable bits of code\nLicense: Not sure\nDepends:\n    ggplot2,\n    ggthemes,\n    plyr,\n    dplyr,\n    reshape,\n    reshape2,\n    stringr,\n    scales,\n    grid,\n    extrafont\nLazyData: TRUE\n",
+    "created" : 1399759782588.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2820659103",
+    "id" : "F1B4BD93",
+    "lastKnownWriteTime" : 1399800863,
+    "path" : "~/github/local/pbtools/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "dcf"
+}
