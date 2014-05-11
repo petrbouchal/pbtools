@@ -1,0 +1,22 @@
+---
+title: "Basic HTML RMarkdown file"
+output:
+  html_document:
+    toc: true
+    fig_caption: true
+---
+
+``` {r Knitr prep, cache=FALSE,include=FALSE}
+library(knitr)
+opts_chunk$set(echo=FALSE, dev='cairo_pdf', warning=FALSE)
+```
+
+``` {r Load tools library from anywhere, include=FALSE, echo=FALSE}
+# install.packages(devtools)
+# library(devtools)
+# install_github('pbtools','petrbouchal')
+library(pbtools)
+```
+## Overview
+
+## Analysis

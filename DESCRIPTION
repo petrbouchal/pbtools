@@ -17,5 +17,6 @@ Depends:
     stringr,
     scales,
     grid,
-    extrafont
+    extrafont,
+    data.table
 LazyData: TRUE

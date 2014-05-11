@@ -1,5 +1,5 @@
 {
-    "path" : "~/github/local/pbtools/data",
+    "path" : "~/github/local/pbtools/inst/rmarkdown/templates/defaultRmarkdown",
     "sortOrder" : [
         {
             "ascending" : true,
