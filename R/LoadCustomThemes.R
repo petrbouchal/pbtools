@@ -40,7 +40,8 @@ LoadCustomThemes <- function (mycols, fontfamily='Helvetica') {
           panel.grid=element_line(colour=themecols[5,3]),
           panel.grid.minor=element_blank(),
           panel.grid.major.x=element_blank(),
-          axis.ticks.length=unit(.12,'cm'))
+          axis.ticks.length=unit(.12,'cm'),
+          axis.title=element_blank())
 
   theme_set(theme_PB)
 }

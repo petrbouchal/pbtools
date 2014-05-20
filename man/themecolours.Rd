@@ -2,13 +2,13 @@
 \docType{data}
 \name{themecolours}
 \alias{themecolours}
-\title{Blah}
-\format{A data frame with 53940 rows and 10 variables}
+\title{Colour set for theme}
+\format{Matrix with 4 columns and 6 rows - 4 tints (25% steps) of 6 colours}
 \usage{
 data(themecolours)
 }
 \description{
-Blah
+Colour set for theme
 }
 \keyword{datasets}
 
