@@ -1,11 +1,11 @@
 Package: pbtools
 Type: Package
-Title: Contains various reusable bits of code
+Title: Various reusable bits of code
 Version: 0.1
 Date: 2014-05-10
 Author: Petr Bouchal
 Maintainer: Petr Bouchal <pbouchal@gmail.com>
-Description: Contains various reusable bits of code
+Description: Various reusable bits of code
 License: Not sure
 Depends:
     ggplot2,
