@@ -2,5 +2,7 @@
 
 export(LoadCustomThemes)
 export(LoadFontsPB)
+export(SavePlot)
 export(TintShade)
 export(WhatPlatform)
+export(rgb2col)

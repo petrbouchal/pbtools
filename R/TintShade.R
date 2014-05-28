@@ -2,15 +2,15 @@
 #'
 #' This function allows you to express your love of cats.
 #' @param colors Character vector with hex or RGB spec of each colour
-#' @param tints Numeric vector specifying level of each tint, 0-1
-#' @param shades Numeric vector specifying level of each shade, 0-1
+#' @param tints Numeric vector specifying level of each tint, 0-1; 1 will be included automatically
+#' @param shades Numeric vector specifying level of each shade, 0-1; 1 will be included automatically
 #' @param hexin Are colours in hex format? Defaults to TRUE.
 #' @keywords colours, themes
 #' @return Matrix; nrows=number of colours, ncol=number of tints and shades
 #' includes the input colours
 #' @export
 #' @examples
-#' cat_function()
+#' TintShare(ifgbasecolours, c(0.75,0.5,0.25))
 
 TintShade <- function(colors, tints=c(), shades=c(), hexin=TRUE) {
   if(hexin) {

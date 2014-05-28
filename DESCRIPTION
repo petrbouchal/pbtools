@@ -18,5 +18,6 @@ Depends:
     scales,
     grid,
     extrafont,
-    data.table
+    data.table,
+    lubridate
 LazyData: TRUE
