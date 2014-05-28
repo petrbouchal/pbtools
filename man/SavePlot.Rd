@@ -4,7 +4,7 @@
 \title{Load custom theme}
 \usage{
 SavePlot(plotname = "Plot", plotformat = "eps", ffamily = "Helvetica",
-  splot = last_plot(), ploth = 21/2, plotw = 14, plotdir)
+  splot = last_plot(), ploth = 21/2, plotw = 14, plotdir = ".")
 }
 \arguments{
 \item{splot}{Ggplot object. Defaults to last plot}

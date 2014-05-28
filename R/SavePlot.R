@@ -15,7 +15,7 @@
 #' SavePlot()
 
 SavePlot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
-                      splot=last_plot() ,ploth=21/2, plotw=14, plotdir) {
+                      splot=last_plot() ,ploth=21/2, plotw=14, plotdir='.') {
   try(dev.off(),silent=TRUE)
   plotobjdir <- paste0(plotdir,'./charts-objects/')
   plotimagedir <- paste0(plotdir,'./charts-objects/')
