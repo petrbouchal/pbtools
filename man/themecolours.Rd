@@ -3,7 +3,7 @@
 \name{themecolours}
 \alias{themecolours}
 \title{Colour set for theme}
-\format{Matrix with 4 columns and 6 rows - 4 tints (25% steps) of 6 colours}
+\format{Matrix with 4 columns and 6 rows - 4 tints (25\% steps) of 7 colours}
 \usage{
 data(themecolours)
 }

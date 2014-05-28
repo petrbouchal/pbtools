@@ -1,15 +1,30 @@
+#' Load custom theme
+#'
+#' Save ggplot - ggsave wrapper. Saves image, GGplot object, and data.
+#' @param splot Ggplot object. Defaults to last plot
+#' @param plotname String. Defaults 'Plot'.
+#' @param ffamily Font family. Defaults to 'Helvetica'
+#' @param plotformat String
+#' @param plotw Width of plot in centimeters. Defaults to 14
+#' @param ploth Height of plot in centimeters. Defaults to 11.5
+#' @keywords ggplot, themes
+#' @export
+#' @return NULL
+#' @examples
+#' SavePlot()
+
 SavePlot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
-                      splot=last_plot() ,ploth=210/2, plotw=14) {
+                      splot=last_plot() ,ploth=21/2, plotw=14) {
   try(dev.off(),silent=TRUE)
-  plotobjdir <- './charts-output/charts-objects/'
-  plotimagedir <- './charts-output/charts-images/'
-  plotdatadir <- './charts-output/charts-data//'
+  plotobjdir <- paste0(chartdir,'./charts-objects/')
+  plotumagedir <- paste0(chartdir,'./charts-objects/')
+  plotdatadir <- paste0(chartdir,'./charts-objects/')
   plotimagepath = paste0(plotimagedir,plotname,'.',plotformat)
   plotobjpath = paste0(plotobjdir,plotname,'.','ggp')
   plotdatapath = paste0(plotdatadir,plotname,'.','ggp')
   if(plotformat=='pdf') {
     ggsave(plotimagepath, plot=splot, family=ffamily, device=cairo_pdf,
-           height=ph, width=pw, units='cm')  
+           height=ph, width=pw, units='cm')
   } else if(plotformat=='eps') {
     ggsave(plotimagepath, plot=splot, family=ffamily, device=cairo_ps,
            height=ph, width=pw, units='cm')

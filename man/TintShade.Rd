@@ -8,9 +8,9 @@ TintShade(colors, tints = c(), shades = c(), hexin = TRUE)
 \arguments{
 \item{colors}{Character vector with hex or RGB spec of each colour}
 
-\item{tints}{Numeric vector specifying level of each tint, 0-1}
+\item{tints}{Numeric vector specifying level of each tint, 0-1; 1 will be included automatically}
 
-\item{shades}{Numeric vector specifying level of each shade, 0-1}
+\item{shades}{Numeric vector specifying level of each shade, 0-1; 1 will be included automatically}
 
 \item{hexin}{Are colours in hex format? Defaults to TRUE.}
 }
@@ -22,7 +22,7 @@ includes the input colours
 This function allows you to express your love of cats.
 }
 \examples{
-cat_function()
+TintShare(ifgbasecolours, c(0.75,0.5,0.25))
 }
 \keyword{colours,}
 \keyword{themes}
