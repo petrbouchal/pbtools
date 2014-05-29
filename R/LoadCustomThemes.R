@@ -1,15 +1,20 @@
 #' Load custom theme
 #'
 #' Create custom ggplot theme based on a set of colours and a font family
-#' @param mycols A vector of colours in hex (HTML) format.
+#' @param mycols A vector of colours in hex (HTML) format. Defaults to ugly.
 #' @param fontfamily Font family. Defaults to 'Helvetica'
+#' @param tint Vector of 0-1 value for shades to embed in theme. Defaults to .75,.5,.25
+#' @param shade Vector of 0-1 values for shades to embed in theme. Defaults to NULL
 #' @keywords ggplot, themes
 #' @export
+#' @return NULL
 #' @examples
 #' LoadCustomThemes()
 
-LoadCustomThemes <- function (mycols, fontfamily='Helvetica') {
-  themecols <- TintShade(mycols,c(.75,0.5,.25),hexin=TRUE)
+LoadCustomThemes <- function (mycols=themecolours, fontfamily='Helvetica',
+                              tints=c(.75,0.5,.25), shades=NULL) {
+
+  themecols <- TintShade(mycols,c(.75,0.5,.25),shades,hexin=TRUE)
 
   theme_PB <- theme_few()+
     theme(text = element_text(family=fontfamily,size=10),
@@ -41,7 +46,10 @@ LoadCustomThemes <- function (mycols, fontfamily='Helvetica') {
           panel.grid.minor=element_blank(),
           panel.grid.major.x=element_blank(),
           axis.ticks.length=unit(.12,'cm'),
-          axis.title=element_blank())
+          axis.title.x=element_blank(),
+          axis.title.y=element_blank(),
+          plot.title=element_blank())
 
   theme_set(theme_PB)
+  return(NULL)
 }
