@@ -1,7 +1,7 @@
-#' Load custom theme
+#' Convert RGB to hex
 #'
 #' Create hex value of colour based on RGB value
-#' @param rgb Vector with \% RGB values
+#' @param rgb Vector with \% RGB values [0;1]
 #' @keywords ggplot, themes
 #' @export
 #' @return string
