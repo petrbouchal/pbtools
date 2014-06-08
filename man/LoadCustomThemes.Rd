@@ -3,7 +3,7 @@
 \alias{loadcustomthemes}
 \title{Load custom theme}
 \usage{
-loadcustomthemes(mycols = themecolours, fontfamily = "Helvetica",
+loadcustomthemes(mycols = themebasecolours, fontfamily = "Helvetica",
   tints = c(0.75, 0.5, 0.25), shades = NULL)
 }
 \arguments{

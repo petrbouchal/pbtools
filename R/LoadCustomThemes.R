@@ -11,10 +11,10 @@
 #' @examples
 #' loadcustomthemes()
 
-loadcustomthemes <- function (mycols=themecolours, fontfamily='Helvetica',
+loadcustomthemes <- function (mycols=themebasecolours, fontfamily='Helvetica',
                               tints=c(.75,0.5,.25), shades=NULL) {
 
-  themecols <- TintShade(mycols,c(.75,0.5,.25),shades,hexin=TRUE)
+  themecols <- tintshade(mycols,tints,shades,hexin=TRUE)
 
   theme_PB <- theme_few()+
     theme(text = element_text(family=fontfamily,size=10),
@@ -51,5 +51,5 @@ loadcustomthemes <- function (mycols=themecolours, fontfamily='Helvetica',
           plot.title=element_blank())
 
   theme_set(theme_PB)
-  return(NULL)
+  return(TRUE)
 }
