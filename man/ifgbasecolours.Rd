@@ -2,13 +2,13 @@
 \docType{data}
 \name{ifgbasecolours}
 \alias{ifgbasecolours}
-\title{Colour set for theme - IfG corporate colours}
-\format{Matrix with 4 columns and 7 rows - 4 tints (25\% steps) of 7 colours}
+\title{Colour set for theme - IfG corporate colours - 7 base colours only}
+\format{Matrix with 1 column and 7 rows - 7 base colours only}
 \usage{
 data(themecolours)
 }
 \description{
-Colour set for theme - IfG corporate colours
+Colour set for theme - IfG corporate colours - 7 base colours only
 }
 \keyword{datasets}
 
