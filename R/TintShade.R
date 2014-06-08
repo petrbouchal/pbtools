@@ -10,9 +10,9 @@
 #' includes the input colours
 #' @export
 #' @examples
-#' TintShare(ifgbasecolours, c(0.75,0.5,0.25))
+#' tintshade(ifgbasecolours, c(0.75,0.5,0.25))
 
-TintShade <- function(colors, tints=c(), shades=c(), hexin=TRUE) {
+tintshade <- function(colors, tints=c(), shades=c(), hexin=TRUE) {
   if(hexin) {
     rgbcols <- col2rgb(colors)
   } else {

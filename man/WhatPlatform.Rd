@@ -9,6 +9,6 @@ WhatPlatform()
 Returns the name of the current platform
 }
 \examples{
-WhatPlatform()
+whatplatform()
 }
 

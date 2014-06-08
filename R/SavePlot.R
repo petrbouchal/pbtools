@@ -1,4 +1,4 @@
-#' Load custom theme
+#' Save plot with ggsave
 #'
 #' Save ggplot - ggsave wrapper. Saves image, GGplot object, and data.
 #' @param splot Ggplot object. Defaults to last plot
@@ -12,9 +12,9 @@
 #' @export
 #' @return NULL
 #' @examples
-#' SavePlot()
+#' saveplot()
 
-SavePlot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
+saveplot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
                       splot=last_plot() ,ploth=21/2, plotw=14, plotdir='.') {
   try(dev.off(),silent=TRUE)
   plotobjdir <- paste0(plotdir,'./charts-objects/')

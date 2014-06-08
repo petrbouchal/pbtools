@@ -7,11 +7,11 @@
 #' @param shade Vector of 0-1 values for shades to embed in theme. Defaults to NULL
 #' @keywords ggplot, themes
 #' @export
-#' @return NULL
+#' @return TRUE
 #' @examples
-#' LoadCustomThemes()
+#' loadcustomthemes()
 
-LoadCustomThemes <- function (mycols=themecolours, fontfamily='Helvetica',
+loadcustomthemes <- function (mycols=themecolours, fontfamily='Helvetica',
                               tints=c(.75,0.5,.25), shades=NULL) {
 
   themecols <- TintShade(mycols,c(.75,0.5,.25),shades,hexin=TRUE)

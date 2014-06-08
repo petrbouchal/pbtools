@@ -3,7 +3,7 @@
 #' Returns the name of the current platform
 #' @export
 #' @examples
-#' WhatPlatform()
+#' whatplatform()
 
 WhatPlatform <- function () {
   if(Sys.info()[['sysname']]=='Darwin') {mysys='mac'} else {mysys='win'}

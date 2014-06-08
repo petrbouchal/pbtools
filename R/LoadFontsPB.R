@@ -1,10 +1,10 @@
 #' Load fonts independently of platform
 #'
-#' This function allows you to express your love of cats.
-#' @keywords cats
+#' Load fonts independently of platform
+#' @keywords fonts
 #' @export
 
-LoadFontsPB <- function () {
+loadfontspb <- function () {
   loadfonts(device='postscript',quiet=TRUE)
   loadfonts(quiet=TRUE)
   if(Sys.info()[['sysname']]=='Darwin') {mysys='mac'} else {mysys='win'}
