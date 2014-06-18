@@ -1,3 +1,12 @@
+#' Rmd to Byrokrates
+#'
+#' Upload Rmd document as post to Byrokrates WordPress blog
+#' @param filename name od Rmd file
+#' @param title Title of blog post
+#' @param publish FALSE for draft, TRUE to publish. Defaults to FALSE
+#' @param  preview Whether to open preview in browser upon publication. Defaults to TRUE
+#' @keywords wordpress blog
+
 knit2byrokrates <- function (filename, title=paste('R blog',format(Sys.time(), "%d/%m/%Y %H:%M")),
                                               publish=F, preview=T) {
   if (!require('RWordPress'))
@@ -20,5 +29,3 @@ knit2byrokrates <- function (filename, title=paste('R blog',format(Sys.time(), "
   previewurl <- paste0('http://byrokrates.cz?p=',result[1],'&preview=true')
   if(preview) {browseURL(previewurl)}
 }
-
-knit2byrokrates('yourfile.Rmd')
