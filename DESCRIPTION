@@ -10,7 +10,6 @@ License: Not sure
 Depends:
     ggplot2,
     ggthemes,
-    plyr,
     dplyr,
     reshape,
     reshape2,
