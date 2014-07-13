@@ -2,6 +2,7 @@
 
 export(WhatPlatform)
 export(connectAccess64)
+export(knit2byrokrates)
 export(loadcustomthemes)
 export(loadfontspb)
 export(rgb2col)
