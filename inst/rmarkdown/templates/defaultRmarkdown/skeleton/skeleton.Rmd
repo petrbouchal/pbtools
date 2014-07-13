@@ -10,8 +10,8 @@ output:
 library(knitr)
 # set up graphing:
 opts_chunk$set(echo=FALSE, dev='cairo_pdf', warning=FALSE)
-# make relative references work:
-opts_knit$set(root.dir='~/github/local/Charting-government/')
+# make relative references work - change this to project directory
+opts_knit$set(root.dir='~/github/Charting-government/')
 ```
 
 ``` {r Load tools library from anywhere, include=FALSE, echo=FALSE}
