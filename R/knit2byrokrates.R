@@ -6,6 +6,7 @@
 #' @param publish FALSE for draft, TRUE to publish. Defaults to FALSE
 #' @param  preview Whether to open preview in browser upon publication. Defaults to TRUE
 #' @keywords wordpress blog
+#' @export
 
 knit2byrokrates <- function (filename, title=paste('R blog',format(Sys.time(), "%d/%m/%Y %H:%M")),
                                               publish=F, preview=T) {

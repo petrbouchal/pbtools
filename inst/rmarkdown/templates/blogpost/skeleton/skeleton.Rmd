@@ -1,0 +1,56 @@
+---
+title: "Blogpost"
+output:
+  html_document:
+    fig_caption: true
+---
+
+``` {r Knitr prep, cache=FALSE,include=FALSE}
+library(knitr)
+# set up graphing:
+opts_chunk$set(echo=FALSE, dev='cairo_pdf', warning=FALSE, fig.width=600/74)
+# make relative references work - change this to project directory
+opts_knit$set(root.dir='~/github/Charting-government/')
+```
+
+``` {r Load tools library from anywhere, include=FALSE, echo=FALSE}
+# install.packages(devtools)
+# library(devtools)
+# install_github('pbtools','petrbouchal')
+library(pbtools)
+```
+
+
+``` {r Data prep, include=FALSE, echo=FALSE, warning=FALSE}
+# prep data here
+bdata <- read.csv()
+bdata <- bdata %>%
+```
+
+Summary here before break
+
+<!--more-->
+
+## Heading 2
+
+More text here
+
+```{r Plot prep, include=FALSE, echo=FALSE, warning=FALSE}
+# prep plot here
+loadcustomthemes(themebasecolours, 'Helvetica')
+
+bplot <- ggplot(bdata, aes()) +
+  geom_bar() +
+  scale_fill_manual() +
+  theme()
+```
+
+```{r Plot, include=FALSE, echo=FALSE, fig.cap='Figure caption', warning=FALSE}
+# generate plot here
+
+
+
+# ideally include gtable code here to bake in source line and well-formatted title 
+# directly into the image
+
+# publish by knit2byrokrates(file, publish=F, preview=T, title='Title')
