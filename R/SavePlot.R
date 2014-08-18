@@ -25,10 +25,10 @@ saveplot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
   plotdatapath = paste0(plotdatadir,plotname,'.','ggp')
   if(plotformat=='pdf') {
     ggsave(plotimagepath, plot=splot, family=ffamily, device=cairo_pdf,
-           height=ph, width=pw, units='cm')
+           height=ploth, width=plotw, units='cm')
   } else if(plotformat=='eps') {
     ggsave(plotimagepath, plot=splot, family=ffamily, device=cairo_ps,
-           height=ph, width=pw, units='cm')
+           height=ploth, width=plotw, units='cm')
   } else {
     ggsave(plotimagepath, plot=splot, family=ffamily,
            height=ploth, width=plotw, units='cm')
