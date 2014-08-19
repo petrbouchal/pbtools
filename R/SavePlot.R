@@ -14,12 +14,12 @@
 #' @examples
 #' saveplot()
 
-saveplot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
+saveplot <- function (plotname=timestampedfilename(), plotformat='eps', ffamily='Helvetica',
                       splot=last_plot() ,ploth=21/2, plotw=14, plotdir='.') {
   try(dev.off(),silent=TRUE)
   plotobjdir <- paste0(plotdir,'./charts-objects/')
-  plotimagedir <- paste0(plotdir,'./charts-objects/')
-  plotdatadir <- paste0(plotdir,'./charts-objects/')
+  plotimagedir <- paste0(plotdir,'./charts-images/')
+  plotdatadir <- paste0(plotdir,'./charts-data/')
   plotimagepath = paste0(plotimagedir,plotname,'.',plotformat)
   plotobjpath = paste0(plotobjdir,plotname,'.','ggp')
   plotdatapath = paste0(plotdatadir,plotname,'.','ggp')
