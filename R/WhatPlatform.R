@@ -5,7 +5,7 @@
 #' @examples
 #' whatplatform()
 
-WhatPlatform <- function () {
+whatplatform <- function () {
   if(Sys.info()[['sysname']]=='Darwin') {mysys='mac'} else {mysys='win'}
   if(mysys=='win') {loadfonts(device='win',quiet=TRUE)}
   return(mysys)
