@@ -12,6 +12,7 @@ devtools::install_github('petrbouchal/pbtools',args=c('--library=\"C:/PROGRA~1/R
 ## To do
 
 - [x] FIX saveplot()
+- [ ] rewrite/improve custom theme handling
 - [ ] integrate splicing CSVs (code contained in Charting government repo)
 - [ ] integrate customised shinyapps deploy + add password prompt (?) - (code contained in Charting government repo)
 - [ ] wrapper function for enriching data by inner-joining a csv in one line
