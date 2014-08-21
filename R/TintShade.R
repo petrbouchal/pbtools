@@ -33,5 +33,7 @@ tintshade <- function(colors, tints=c(), shades=c(), hexin=TRUE) {
       rgbout <- rbind(rgbout, colshade)
     }
   }
+  rownames(rgbout) <- NULL
+  colnames(rgbout) <- NULL
   return(t(rgbout))
 }
