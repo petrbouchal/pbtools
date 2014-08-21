@@ -3,9 +3,9 @@
 \alias{saveplot}
 \title{Save plot with ggsave}
 \usage{
-saveplot(plotname = timestampedfilename(), plotformat = "eps",
-  ffamily = "Helvetica", splot = last_plot(), ploth = 21/2, plotw = 14,
-  plotdir = ".")
+saveplot(plotname = "Plot", plotformat = "eps", ffamily = "Helvetica",
+  splot = last_plot(), ploth = 21/2, plotw = 14, plotdir = ".",
+  dpi = 96)
 }
 \arguments{
 \item{splot}{Ggplot object. Defaults to last plot}
@@ -21,6 +21,8 @@ saveplot(plotname = timestampedfilename(), plotformat = "eps",
 \item{ploth}{Height of plot in centimeters. Defaults to 11.5}
 
 \item{plotdir}{Directory for saving - plot, data and image are saved into subdirectories}
+
+\item{dpi}{resolution for raster graphics, passed to ggsave}
 }
 \description{
 Save ggplot - ggsave wrapper. Saves image, GGplot object, and data.

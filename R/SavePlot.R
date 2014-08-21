@@ -8,6 +8,7 @@
 #' @param plotw Width of plot in centimeters. Defaults to 14
 #' @param ploth Height of plot in centimeters. Defaults to 11.5
 #' @param plotdir Directory for saving - plot, data and image are saved into subdirectories
+#' @param dpi resolution for raster graphics, passed to ggsave
 #' @keywords ggplot, themes
 #' @export
 #' @return NULL
@@ -15,7 +16,7 @@
 #' saveplot()
 
 saveplot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
-                      splot=last_plot() ,ploth=21/2, plotw=14, plotdir='.') {
+                      splot=last_plot() ,ploth=21/2, plotw=14, plotdir='.', dpi=96) {
   try(dev.off(),silent=TRUE)
   plotname2 <- timestampedfilename(plotname)
   plotobjdir <- paste0(plotdir,'./charts-objects/')
@@ -32,7 +33,7 @@ saveplot <- function (plotname='Plot', plotformat='eps', ffamily='Helvetica',
            height=ploth, width=plotw, units='cm')
   } else {
     ggsave(plotimagepath, plot=splot, family=ffamily,
-           height=ploth, width=plotw, units='cm')
+           height=ploth, width=plotw, units='cm', dpi=dpi)
   }
   save(splot,file=plotobjpath)
   write.csv(splot$data,file=paste0(plotdatadir,plotname,'_data.csv'))
