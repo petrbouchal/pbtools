@@ -9,6 +9,15 @@ The code to install this on a Windows machine with limited permissions:
 devtools::install_github('petrbouchal/pbtools',args=c('--library=\"C:/PROGRA~1/R/R-30~1.2/library\"'))
 ```
 
+And this how to install it from behind a proxy:
+
+```r
+library(httr)
+library(devtools)
+set_config(use_proxy(url="proxy2", port=8080))
+install_github('pbtools', 'petrbouchal')
+```
+
 ## To do
 
 - [x] FIX saveplot()
