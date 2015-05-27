@@ -14,8 +14,8 @@ And this how to install it from behind a proxy:
 ```r
 library(httr)
 library(devtools)
-set_config(use_proxy(url="proxy2", port=8080))
-install_github('pbtools', 'petrbouchal')
+set_config(use_proxy(url="proxyurl", port=8080))
+install_github('pbtools/petrbouchal')
 ```
 
 ## To do
